@@ -20,13 +20,13 @@ function App() {
   }
 
   const filteredCoins = coins.filter(coin=>
-    coin.name.toLowerCase().includes(search.toLowerCase());
-    )
+    coin.name.toLowerCase().includes(search.toLowerCase())
+    );
 
   return (
     <div className="coin-app">
       <div className="coin-search">
-        <h1 className="coin-text">Searc a currency</h1>
+        <h1 className="coin-text">Search for a currency</h1>
         <form>
           <input type="text" placeholder="Search" className="coin-input" onChange={handleChange}/>
         </form>
